@@ -55,6 +55,45 @@
       }
     },
     {
+      "id": "chatawesome.cn.json-pretty",
+      "name": "JSON Formatter",
+      "description": "Format, minify, fold, escape, import and export JSON. Pure frontend; all data stays on your machine.",
+      "publisher": "acornlive",
+      "verified": false,
+      "icon": "https://dl.dbxio.com/plugins/chatawesome.cn.json-pretty/0.1.1/icon.svg",
+      "tags": [
+        "developer-tools",
+        "files"
+      ],
+      "permissions": [],
+      "source": "https://github.com/acornlive/dbx-plugin-json-pretty/tree/v0.1.0",
+      "homepage": "https://github.com/acornlive/dbx-plugin-json-pretty",
+      "license": "MIT",
+      "latestVersion": "0.1.1",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "releasedAt": "2026-09-21T05:06:53.620Z",
+          "releaseNotes": "Initial catalog submission. Pure-frontend DBX workbench plugin to format, minify, fold, escape/unescape, and import/export JSON locally. Includes MIT LICENSE in the source tree.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/chatawesome.cn.json-pretty/0.1.1/chatawesome.cn.json-pretty-0.1.1-universal.dbxp",
+              "sha256": "7a5509ff30f6135d2a01dae2e1470f1ae7135bf33e5ec038b4fae6042ef81be5",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 18715
+            }
+          ]
+        }
+      ],
+      "localizations": {
+        "zh-CN": {
+          "name": "JSON 格式化工具",
+          "description": "格式化、压缩、折叠、转义、导入、导出 JSON。纯前端、数据不出本机。"
+        }
+      }
+    },
+    {
       "id": "com.jettech.httpclient",
       "name": "HTTP Client",
       "description": "A Postman-style HTTP workbench: compose requests, send them through a native sidecar, and inspect responses.",
@@ -959,7 +998,7 @@
       "description": "Operate Apache Kafka from one workspace: inspect topics and partitions, produce and consume messages, filter and decode payloads, monitor consumer lag, manage offsets and ACLs, stream records, and export results.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.45/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/icon.svg",
       "tags": [
         "kafka",
         "streaming",
@@ -973,8 +1012,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-kafka",
       "homepage": "https://github.com/jinpy666/dbx-plugin-kafka",
       "license": "MIT",
-      "latestVersion": "0.1.45",
+      "latestVersion": "0.1.47",
       "versions": [
+        {
+          "version": "0.1.47",
+          "releasedAt": "2026-09-21T03:32:57.351Z",
+          "releaseNotes": "修复深色主题下 Topic 侧栏不可读的问题：图标色随 color-scheme 自动翻转，核心颜色令牌改为实时跟随宿主主题（不再被内联快照冻结），并提升树行/星标对比度。消息查询新增「最近 N 条」Offset 策略并设为默认：原「最新」策略从日志末端只等待新消息，对没有持续流量的 topic 总是「已扫描 0 · 命中 0」，现在默认即可读到每个分区最新的历史记录。Fixed topics sidebar legibility in dark theme: icon hues follow color-scheme, core color tokens now track the host theme live instead of being frozen by an inline snapshot, and tree row/star contrast was raised. Messages query adds a recent-N offset strategy and defaults to it: the previous latest default only waited for new records and always scanned zero on idle topics; the new default surfaces the newest existing records per partition.",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-darwin-arm64.dbxp",
+              "sha256": "d531e203c024e5b9be974e1ca462498c00443b7179a90d9529fc7b998e9512ed",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13299542
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-darwin-x64.dbxp",
+              "sha256": "77b6379f4e42569f087db39f3dca65633351624f403bf933fe7f8cbc03d1b0ce",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 14105295
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-linux-arm64.dbxp",
+              "sha256": "1f56da35699f07b9c278275aa78c334de946c3179f9c4ef7749984ac4b3447ba",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 12531833
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-linux-x64.dbxp",
+              "sha256": "3ea699e9dd5affca281efa9522d034bc671eab75e78c810f0f8267d58a842df3",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13614994
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.kafka/0.1.47/io.dbx.kafka-0.1.47-windows-x64.dbxp",
+              "sha256": "330d04d95aec599b13ec5bf8c879d242372dd14c016acb9a65960fa027dcb7c1",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 13696607
+            }
+          ]
+        },
         {
           "version": "0.1.45",
           "releasedAt": "2026-09-20T10:07:27.365Z",
@@ -1307,7 +1388,7 @@
       "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export.",
       "publisher": "jinpy",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.88/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.89/icon.svg",
       "tags": [
         "ldap",
         "directory",
@@ -1321,8 +1402,50 @@
       "source": "https://github.com/jinpy666/dbx-plugin-ldap",
       "homepage": "https://github.com/jinpy666/dbx-plugin-ldap",
       "license": "MIT",
-      "latestVersion": "0.1.88",
+      "latestVersion": "0.1.89",
       "versions": [
+        {
+          "version": "0.1.89",
+          "releasedAt": "2026-09-21T04:34:44.703Z",
+          "releaseNotes": "首个商店版本：LDAP 目录浏览与管理工作台。DN 树浏览、分页搜索与 RFC 4515 过滤器；条目查看、新增、编辑、重命名与删除；RootDSE/Schema 检查与 LDIF/CSV 导出；支持 anonymous、simple、Kerberos/GSSAPI、NTLM、DIGEST-MD5、SASL External 等认证矩阵与 LDAP/StartTLS/LDAPS；内置只读模式、Base DN 白名单、屏蔽属性和审计等安全护栏，支持粘贴 ldapsearch 命令一键导入搜索表单，并提供 MCP 工具面供 AI 客户端复用。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.89/io.dbx.ldap-0.1.89-darwin-arm64.dbxp",
+              "sha256": "763d7065fad7c586ac7bf54e7119bde9e90f98d29a75d053561e2e0fbdfef7ef",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6450423
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.89/io.dbx.ldap-0.1.89-darwin-x64.dbxp",
+              "sha256": "04988f19a7a95203dfbe8e7659338ef86658de729c7119ce752f03105799eb57",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6773955
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.89/io.dbx.ldap-0.1.89-linux-arm64.dbxp",
+              "sha256": "99bc459899f3ea726f895c74c122a08673965570d0adb4cb176f73df039b1ddb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6429348
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.89/io.dbx.ldap-0.1.89-linux-x64.dbxp",
+              "sha256": "80d0d68d39e336224253de09d98ed58c1adb9875bb765fbb8465184b886cfc1f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6865947
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.ldap/0.1.89/io.dbx.ldap-0.1.89-windows-x64.dbxp",
+              "sha256": "3696d898bc84090151c40f177320e8ee496b6cd7795abaaad109da495e2d581f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6913652
+            }
+          ]
+        },
         {
           "version": "0.1.88",
           "releasedAt": "2026-09-19T17:57:10.991Z",
@@ -1580,24 +1703,16 @@
         "zh-CN": {
           "name": "LDAP Studio",
           "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
-        },
-        "zh": {
-          "name": "LDAP Studio",
-          "description": "用于浏览、搜索和管理 LDAP 目录：支持 RFC 4515 过滤器、Schema 检查、条目编辑、LDIF/CSV 导出和受控写入。"
-        },
-        "en": {
-          "name": "LDAP Studio",
-          "description": "Browse, search, and manage LDAP directories: RFC 4515 filters, directory tree, schema inspection, guarded entry editing, and LDIF/CSV export."
         }
       }
     },
     {
       "id": "io.dbx.nintyapi",
       "name": "NintyAPI",
-      "description": "Debug HTTP APIs inside DBX: an API collection tree, full request history (parameters and responses retained), two-way cURL conversion, code generation, draggable split panes, and working clipboard and context menus.",
+      "description": "在 DBX 里调试 HTTP 接口：接口集合树、完整请求历史（参数与响应一并留存）、文件上传（form-data 多文件、拖拽或选择文件、分片流式发送）、cURL 互转、代码生成，分栏可拖拽，剪贴板与右键菜单都可用。",
       "publisher": "nintycat",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.8/icon.png",
+      "icon": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/icon.svg",
       "tags": [
         "http",
         "api",
@@ -1609,8 +1724,57 @@
       "source": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
       "homepage": "https://github.com/NintyCat/dbx-plugin-NintyAPI",
       "license": "Apache-2.0",
-      "latestVersion": "0.1.8",
+      "latestVersion": "0.1.9",
       "versions": [
+        {
+          "version": "0.1.9",
+          "releasedAt": "2026-09-21T04:52:22.296Z",
+          "releaseNotes": "0.1.9：支持文件上传 —— form-data 的一行可装多个文件，发送时展开成多个同名 part；文件由系统对话框选择、直接拖入或填路径，按 512 KiB 分片流式传给后端再发出，单文件上限 64 MiB。浏览器「Copy as cURL」导出的 multipart 请求现在能还原成 form-data 行。请求体类型标签改用协议名（none / JSON / XML / raw / x-www-form-urlencoded / form-data / binary），悬停显示 Content-Type。",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/io.dbx.nintyapi-0.1.9-darwin-arm64.dbxp",
+              "sha256": "3283d88ac24cb5ab362acf58326ed515974dcd404dddc9f1db68f8e90e9b1e18",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4639484
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/io.dbx.nintyapi-0.1.9-darwin-x64.dbxp",
+              "sha256": "018f555ef8d5bcebc3fb8a7b829400fe00060dc1fc37809f4b9ea24bc16daf12",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4863468
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/io.dbx.nintyapi-0.1.9-linux-arm64.dbxp",
+              "sha256": "4ec2a1dca75e5f836c3c68b73c39c87bac07824d9cad6f9f170dbcc63da1f2fa",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4627121
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/io.dbx.nintyapi-0.1.9-linux-x64.dbxp",
+              "sha256": "0d7e2d0d5e6a9a5d6610a983308f585310d21a7e41c73787cfbb3cb8fc6661c7",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4927041
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/io.dbx.nintyapi-0.1.9-windows-arm64.dbxp",
+              "sha256": "cb5f4ea0d767fc3a8dca568f3872a1eb18efa0cf6dec3b4afa7114a877586adb",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4619763
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.dbx.nintyapi/0.1.9/io.dbx.nintyapi-0.1.9-windows-x64.dbxp",
+              "sha256": "9645d3b978f07d51ab03516db3d4595999fc4342ecdb2f221008c9a56268df75",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 4953020
+            }
+          ]
+        },
         {
           "version": "0.1.8",
           "releasedAt": "2026-09-20T05:47:41.038Z",
@@ -2729,7 +2893,7 @@
       "description": "S3-compatible object storage plugin for DBX.",
       "publisher": "t8y2",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.16/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.17/icon.svg",
       "tags": [
         "storage",
         "s3",
@@ -2742,8 +2906,57 @@
       "source": "https://github.com/t8y2/dbx-plugin-s3/tree/v0.1.3",
       "homepage": "https://github.com/t8y2/dbx-plugin-s3",
       "license": "Proprietary",
-      "latestVersion": "0.1.16",
+      "latestVersion": "0.1.17",
       "versions": [
+        {
+          "version": "0.1.17",
+          "releasedAt": "2026-09-21T04:23:33.914Z",
+          "releaseNotes": "",
+          "artifacts": [
+            {
+              "target": "darwin-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.17/io.github.t8y2.s3-0.1.17-darwin-arm64.dbxp",
+              "sha256": "dd1b3a8988876d7ff1948c3432757a417d14b6dd7c6cc913e21960af40934742",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6394149
+            },
+            {
+              "target": "darwin-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.17/io.github.t8y2.s3-0.1.17-darwin-x64.dbxp",
+              "sha256": "2dbbacac49ae8925dc0e61e923d87715f6d3ccbea80b077a137707370e4a891f",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6744701
+            },
+            {
+              "target": "linux-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.17/io.github.t8y2.s3-0.1.17-linux-arm64.dbxp",
+              "sha256": "ce6a90ab0c94b8eca1bd3b66a6c658a7fd0adb91ea404f73a3bbd0dfb35d8600",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6309019
+            },
+            {
+              "target": "linux-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.17/io.github.t8y2.s3-0.1.17-linux-x64.dbxp",
+              "sha256": "f7432c62b1b6b924e24f95584bb9dfefcb58f285ece065666fec5bf098c16bce",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6754979
+            },
+            {
+              "target": "windows-arm64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.17/io.github.t8y2.s3-0.1.17-windows-arm64.dbxp",
+              "sha256": "f798606aad03122d127d8a1edc702c2f25f914c46d2cd110d0ad136fd535a429",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6275963
+            },
+            {
+              "target": "windows-x64",
+              "url": "https://dl.dbxio.com/plugins/io.github.t8y2.s3/0.1.17/io.github.t8y2.s3-0.1.17-windows-x64.dbxp",
+              "sha256": "8087612489a30986536363812bd7d9556324490f2ec0e86c54be6725fcd924d0",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 6763470
+            }
+          ]
+        },
         {
           "version": "0.1.16",
           "releasedAt": "2026-09-20T17:36:24.760Z",
@@ -3678,10 +3891,10 @@
     {
       "id": "terry.devtools",
       "name": "Dev Tools",
-      "description": "26 everyday developer utilities in a package under 100KB — generators (password/QR/barcode/ID/lorem), codecs (Base64/URL/escape/image), crypto (hash/HMAC/JWT/AES), text tools (JSON/diff/case/lines/mojibake) and more. Pure frontend, zero permissions.",
+      "description": "Sandboxed, offline, zero permissions — 40 tools at ~100KB: generators (password/QR/barcode/ID/RSA/TOTP/placeholder), codecs (Base64/Base58/URL/escape/punycode/data-URI), crypto (hash/HMAC/JWT/AES/certificate), text tools (JSON/diff/regex/lines/mojibake) and more.",
       "publisher": "terry",
       "verified": false,
-      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.5.1/icon.svg",
+      "icon": "https://dl.dbxio.com/plugins/terry.devtools/0.5.2/icon.svg",
       "tags": [
         "devtools",
         "utilities",
@@ -3698,8 +3911,22 @@
       "source": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "homepage": "https://github.com/yaoxinghuo/dbx-dev-tools",
       "license": "MIT",
-      "latestVersion": "0.5.1",
+      "latestVersion": "0.5.2",
       "versions": [
+        {
+          "version": "0.5.2",
+          "releasedAt": "2026-09-21T04:44:44.781Z",
+          "releaseNotes": "40 tools: password/ID/lorem/QR/barcode/RSA/TOTP/placeholder generators, Base64/32/58/URL/escape/punycode/quoted-printable/data-URI/image codecs, image compressor, hash & HMAC & CRC32, JWT decode & sign, AES, certificate decoder, RMB uppercase, JSON formatter, text diff, regex tester, case/line/invisible-char/mojibake tools, timestamp & date calc & duration, cron expression, SQL IN builder, Unicode inspector, file size, number base, semver, IP calculator, color & contrast & CMYK, chmod.",
+          "artifacts": [
+            {
+              "target": "universal",
+              "url": "https://dl.dbxio.com/plugins/terry.devtools/0.5.2/terry.devtools-0.5.2-universal.dbxp",
+              "sha256": "df01d502b445a15092830df2049fd45cedee0091721db0a7fde2dcbd07640ca8",
+              "signingKeyId": "dbx-store-release-2026",
+              "size": 120898
+            }
+          ]
+        },
         {
           "version": "0.5.1",
           "releasedAt": "2026-09-20T02:33:37.570Z",
@@ -3746,15 +3973,7 @@
       "localizations": {
         "zh-CN": {
           "name": "Dev Tools",
-          "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
-        },
-        "zh": {
-          "name": "Dev Tools",
-          "description": "26 个日常开发工具，安装包不到 100KB——生成器（密码/二维码/条码/ID/占位文本）、编解码（Base64/URL/转义/图片）、安全（哈希/HMAC/JWT/AES）、文本工具（JSON/对比/大小写/行处理/乱码修复）等。纯前端、零权限。"
-        },
-        "en": {
-          "name": "Dev Tools",
-          "description": "26 everyday developer utilities in a package under 100KB — generators (password/QR/barcode/ID/lorem), codecs (Base64/URL/escape/image), crypto (hash/HMAC/JWT/AES), text tools (JSON/diff/case/lines/mojibake) and more. Pure frontend, zero permissions."
+          "description": "沙箱离线运行，零权限——40 个开发工具，约 100KB：生成器（密码/二维码/条码/ID/RSA 密钥/TOTP/占位图）、编解码（Base64/Base58/URL/转义/Punycode/Data URI）、安全（哈希/HMAC/JWT/AES/证书解析）、文本工具（JSON/对比/正则/行处理/乱码修复）等。"
         }
       }
     }
